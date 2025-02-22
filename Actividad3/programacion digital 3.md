@@ -242,6 +242,11 @@ Es una variable, el radio de un círculo es una variable, porque su valor puede 
 
 ##### 1. El pseudocódigo utiliza símbolos estándar para representar las operaciones lógicas. 
 
+La afirmación es verdadera.
+
+El pseudocódigo utiliza símbolos estándar para representar operaciones lógicas, como AND, OR, NOT, y los valores true (verdadero) y false (falso). Estos símbolos son convencionales y se usan para describir las condiciones lógicas en algoritmos de manera clara y comprensible.
+
+
 
 ##### 2. Los diagramas de flujo son una representación gráfica de un algoritmo.
 
@@ -251,3 +256,86 @@ Es una variable, el radio de un círculo es una variable, porque su valor puede 
 
 ##### 4. Un diagrama de flujo siempre debe tener un inicio y un fin claramente definidos.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## solicitar al usuario 2 numero enteros. Imprimir en pantalla los numero pares comprendidos entre ellos
+
+### pseudocodigo
+
+Inicio
+
+Leer numero_1, numero_2    
+
+    si numero_1 > numero_2 
+    mayor = numero_1
+    menor = numero_2
+    si no 
+        mayor = numero_2
+        menor = numero_1
+Fin si
+mientras menor < mayor
+         si residuo(menor, 2) = 0 //si menor es para
+         Escribir menor
+         Fin si
+         menor = menor +1
+    Fin mientras
+    Fin
+
+     numero_1 = int(input( "Ingrese el primer numero: "))
+    numero_2 = int(input(" Ingrese el segundo numero:"))
+
+if numero_1 > numero_2:
+    mayor = numero_1
+    menor = numero_2
+    
+else:
+    mayor = numero_2
+    menor = numero_1
+while menor <= mayor:
+    if (menor % 2) == 0:
+       print(menor)
+
+Serie de fiboraci
+¿ Cuantos numeros de la serie desea imprimir?
+
+Inicio
+Leer N
+Escribir N0, N1
+N0 = 0
+N1 = 1
+
+Mientras n >0
+ Resultado = No + N1
+ Escribir resultado
+ n0 = N1
+ n1 = resultado
+ N = N - 1
+
+Fin mientras
+Fin
+SI N 
+
+    
