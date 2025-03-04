@@ -27,7 +27,7 @@ https://edu.gcfglobal.org/es/conceptos-basicos-de-programacion/simbolos-de-un-di
 ![alt text](<diagrma de programacion.drawio.png>)
 
 
-1. 
+### 1. Realice un algoritmo para determinar cuánto se debe pagar por equis cantidad de lápices considerando que si son 1000 o más el costo es de $85 cada uno; de lo contrario, el precio es de $90. Represéntelo con el pseudocódigo y el diagrama de flujo.
 
 ## Analisis
 
@@ -73,7 +73,7 @@ FIN
 ![alt text](image-2.png)
 
 
-
+### 2. Un almacén de ropa tiene una promoción: por compras superiores a $250 000 se les aplicará un descuento de 15%, de caso contrario, sólo se aplicará un 8% de descuento. Realice un algoritmo para determinar el precio final que debe pagar una persona por comprar en dicho almacén y de cuánto es el descuento que obtendrá. Represéntelo mediante el pseudocódigo y el diagrama de flujo.
 
 ## Analisis
 
@@ -119,7 +119,7 @@ FIN
 Diagrama 2
 ![alt text](image-3.png)
 
-
+### 3. El director de una escuela está organizando un viaje de estudios, y requiere determinar cuánto debe cobrar a cada alumno y cuánto debe pagar a la compañía de viajes por el servicio. La forma de cobrar es la siguiente: si son 100 alumnos o más, el costo por cada alumno es de $65.00; de 50 a 99 alumnos, el costo es de $70.00, de 30 a 49, de $95.00, y si son menos de 30, el costo de la renta del autobús es de $4000.00, sin importar el número de alumnos.
 
 ## Analisis
 
@@ -196,7 +196,7 @@ Fin
 
 
 
-#Enunciado en clase
+## Enunciado en clase
 Inicio
 
     Leer compra
@@ -306,15 +306,15 @@ valor_total
 
 ##### 3. "Piensa en un número y multiplícalo por otro".
 
-Verdadero, sí es un algoritmo porque sigue pasos claros: elegir un número, multiplicarlo por otro y obtener el resultado. Es un proceso secuencial y bien definido. Aunque es una secuencia sencilla, cumple con las características de un algoritmo: tiene una entrada (el número que eligas), un conjunto de pasos (multiplicarlo) y un resultado(que es el producto).
+- Verdadero, sí es un algoritmo porque sigue pasos claros: elegir un número, multiplicarlo por otro y obtener el resultado. Es un proceso secuencial y bien definido. Aunque es una secuencia sencilla, cumple con las características de un algoritmo: tiene una entrada (el número que eligas), un conjunto de pasos (multiplicarlo) y un resultado(que es el producto).
 
 ##### 4. Un manual de instrucciones para armar un mueble, con pasos detallados y un orden claro.
 
-Verdadero, un manual de instrucciones para armar un mueble puede considerarse un algoritmo. Tiene pasos a detalle y una orden espicifica que se debe seguir para lograr el objetivo exitosamente, que es armar el mueble correctamente, si el caso de no decidir seguir los pasos puede que no te quede el mueble correctamente armado.
+- Verdadero, un manual de instrucciones para armar un mueble puede considerarse un algoritmo. Tiene pasos a detalle y una orden espicifica que se debe seguir para lograr el objetivo exitosamente, que es armar el mueble correctamente, si el caso de no decidir seguir los pasos puede que no te quede el mueble correctamente armado.
 
 ##### 5.Una lista de compras organizada en orden alfabético.
 
-Verdadero, una lista de compras organizada alfabéticamente es un algoritmo, porque sigue unos pasos específicos: hacer la lista, ordenarla y luego comprar según ese orden.
+- Verdadero, una lista de compras organizada alfabéticamente es un algoritmo, porque sigue unos pasos específicos: hacer la lista, ordenarla y luego comprar según ese orden.
 
 
 ### variable o constantes.
@@ -323,23 +323,23 @@ Verdadero, una lista de compras organizada alfabéticamente es un algoritmo, por
 
 ##### 1. El valor de la gravedad en la Tierra, 9.8 m/s².
 
-Es una constante, Porque la gravedad es algo que nunca cambia, osea en ciertos lugares en la tiweea puede llegar a tener una gravedad algo diferente a esa, pero esa gravedad nunca cambiara. Conocida tambien como constante gravitacional.
+- Es una constante, Porque la gravedad es algo que nunca cambia, osea en ciertos lugares en la tiweea puede llegar a tener una gravedad algo diferente a esa, pero esa gravedad nunca cambiara. Conocida tambien como constante gravitacional.
 
 ##### 2. La edad de una persona calculada en base al año actual y su año de nacimiento.
 
-Es una variable, A persar de que es algo que pasa cada año en la misma fecha, la fecha es una variable cuantitativa, porque cambia con el tiempo. A medida que la persona envejece va á seguir aumentando la edad, por lo que no es un valor constante. ya que tiene sentido calcular la diferencia entre fechas. Incluso la diferencia entre la fecha de nacimiento y la fecha actual es la edad de la persona.
+- Es una variable, A persar de que es algo que pasa cada año en la misma fecha, la fecha es una variable cuantitativa, porque cambia con el tiempo. A medida que la persona envejece va á seguir aumentando la edad, por lo que no es un valor constante. ya que tiene sentido calcular la diferencia entre fechas. Incluso la diferencia entre la fecha de nacimiento y la fecha actual es la edad de la persona.
 
 ##### 3. La cantidad de dinero en una cuenta bancaria.
 
-Una variable, porque La cantidad de dinero en una cuenta bancaria siempre puede llegar a variar. Osea que no puede ser un algoritmo, porque va a ír cambiando con el tiempo dependiendo de los depósitos que pagues, retiros que hagas ó otros movimientos financieros en tu cuenta bancaria. Nunca vas a tener un valor ó una cantidad de dinero constantemente en tu cuenta.
+- Una variable, porque La cantidad de dinero en una cuenta bancaria siempre puede llegar a variar. Osea que no puede ser un algoritmo, porque va a ír cambiando con el tiempo dependiendo de los depósitos que pagues, retiros que hagas ó otros movimientos financieros en tu cuenta bancaria. Nunca vas a tener un valor ó una cantidad de dinero constantemente en tu cuenta.
 
 ##### 4. La velocidad de la luz en el vacío, 299,792,458 m/s.
 
-Es una constante, La velocidad de la luz en el vacío, 299,792,458 m/s siempre sera es una constante, porque es un valor fijo y universal que no cambia en condiciones normales, sin importar la situación o el lugar. La velocidad de la luz en el vacío es una constante absoluta en la física. No cambia en ningún contexto o situación
+- Es una constante, La velocidad de la luz en el vacío, 299,792,458 m/s siempre sera es una constante, porque es un valor fijo y universal que no cambia en condiciones normales, sin importar la situación o el lugar. La velocidad de la luz en el vacío es una constante absoluta en la física. No cambia en ningún contexto o situación
 
 ##### 5. El radio de un círculo.
 
-Es una variable, el radio de un círculo es una variable, porque su valor puede cambiar dependiendo del tamaño del círculo. El radio es la distancia desde el centro del círculo hasta cualquier punto de su borde, y puede variar para diferentes círculos.
+- Es una variable, el radio de un círculo es una variable, porque su valor puede cambiar dependiendo del tamaño del círculo. El radio es la distancia desde el centro del círculo hasta cualquier punto de su borde, y puede variar para diferentes círculos.
 
 
 ###  Características de los Algoritmos.
@@ -366,23 +366,43 @@ Es una variable, el radio de un círculo es una variable, porque su valor puede 
 
 ##### 1. El pseudocódigo utiliza símbolos estándar para representar las operaciones lógicas. 
 
-La afirmación es verdadera.
+- La afirmación es verdadera.
 
-El pseudocódigo utiliza símbolos estándar para representar operaciones lógicas, como AND, OR, NOT, y los valores true (verdadero) y false (falso). Estos símbolos son convencionales y se usan para describir las condiciones lógicas en algoritmos de manera clara y comprensible.
+- El pseudocódigo utiliza símbolos estándar para representar operaciones lógicas, como AND, OR, NOT, y los valores true (verdadero) y false (falso). Estos símbolos son convencionales y se usan para describir las condiciones lógicas en algoritmos de manera clara y comprensible.
 
 
 
 ##### 2. Los diagramas de flujo son una representación gráfica de un algoritmo.
-
+- verdadera,Los diagramas de flujo son una representación gráfica de un algoritmo que muestran de manera visual la secuencia de pasos a seguir para resolver un problema o realizar una tarea específica. Utilizan símbolos y flechas para representar acciones y decisiones, lo que facilita la comprensión y comunicación de ideas complejas. Son muy útiles para planificar y organizar proyectos, ya que permiten identificar posibles errores o mejoras en el proceso antes de llevarlo a cabo
 
 ##### 3. El pseudocódigo debe estar escrito en un lenguaje de programación específico.
-
+- verdadera, El pseudocódigo no tiene que estar escrito en un lenguaje de programación específico. Es una forma simple y clara de describir algoritmos usando un lenguaje cercano al natural, sin preocuparse por la sintaxis de los lenguajes de programación. Su objetivo es facilitar la comprensión y diseño de algoritmos
 
 ##### 4. Un diagrama de flujo siempre debe tener un inicio y un fin claramente definidos.
+Los diagramas de flujo siempre deben tener un inicio y un fin claramente definidos. Esto es esencial para asegurar que el proceso o el algoritmo representado sea comprensible y lógico. El "Inicio" marca el punto de entrada al proceso, mientras que el "Fin" indica cuándo el proceso ha concluido. Estos puntos ayudan a organizar los pasos intermedios y a asegurar que el flujo del diagrama sea coherente y fácil de seguir.
 
 
+#### 5. Estructuras de Control.
 
+- Las estructuras de control son importantes porque nos ayudan a tomar decisiones y realizar acciones basadas en ciertas condiciones. En programación, hay tres tipos principales: secuenciales, condicionales y bucles. Nos permiten dirigir el flujo del programa de manera lógica.
 
+- Ejemplo de la vida diaria: Decidir si llevar un paraguas.
+
+- Secuencial: Levantarse, lavarse los dientes, desayunar.
+
+- Condicional: Si está lloviendo, tomar el paraguas. Si no, salir sin él.
+
+- Bucle: Cepillarse los dientes hasta que estén limpios.
+
+- Ejemplo con cálculos matemáticos: Decidir si comprar un producto según el presupuesto.
+
+- Secuencial: Calcular presupuesto, anotar gastos, determinar presupuesto restante.
+
+- Condicional: Si el precio del producto es menor o igual al presupuesto, comprarlo. Si no, no comprarlo.
+
+- Bucle: Revisar todos los gastos.
+
+- Estas estructuras nos permiten organizar y ejecutar acciones de manera lógica y eficiente
 
 
 
