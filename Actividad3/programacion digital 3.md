@@ -90,7 +90,9 @@ No hay
 Descuento
 
 ### Ecuaciones
+Descuento = Monto_Compra/100 * Descuento
 
+PrecioFinal = Monto_Compra - Descuento
 
 INICIO
 
@@ -98,7 +100,7 @@ INICIO
 
 Descuento
 
-    S Monto_Compra > 250000
+    Si Monto_Compra > 250000
      Entonces Descuento = 15%
     Si no
         Descuento = 8%
@@ -109,24 +111,68 @@ Descuento
     PrecioFinal = Monto_Compra - Descuento
     Imprimir Precio_Final
     
-    ESCRIBIR "El descuento es: $" + descuento
-    ESCRIBIR "El precio final es: $" + precioFinal
+    Escribir "El descuento es: $" + descuento
+    Escribir "El precio final es: $" + precioFinal
 
 FIN
 
-
-
-
-
-
-
-
-
-
-
-
 Diagrama 2
 ![alt text](image-3.png)
+
+
+
+## Analisis
+
+### Variables de entrada
+Numero_Alumno
+### Variables de salida
+Monto_Total
+
+### Constantes
+N
+
+### Otras Variables 
+Costo_Total
+
+### Ecuaciones
+
+
+INICIO
+
+    LEER Numero_Alumnos
+
+Costo_Alumno
+Monto_Total 
+
+    Si Numero_Alumnos >= 100 
+    Entonces Costo_Alumno = 65
+    Si no Si Numero_Alumnos >= 50
+     Entonces Costo_Alumno = 70
+    Si no Si Numero_Alumnos >= 30 
+    Entonces Costo_Alumno = 95
+    De lo contrario
+        Monto_Total = 4000
+        Costo_Alumno = Monto_Total / Numero_AlumnosAlumnos
+    Fin Si
+
+    Si Numero_Alumnos >= 30
+     Entonces Monto_Total = numeroAlumnos * costoPorAlumno
+    Fin Si
+
+    Escribir "El costo por alumno es: $" + costoPorAlumno
+    SI Numero_Alumnos >= 30 
+    Entonces
+        Escribir "El monto total a pagar es: $" + montoTotal
+    De lo contrario
+        Escribir "El monto total a pagar es: $" + montoTotal
+
+FIN
+
+![alt text](image-4.png)
+
+
+
+
 
 1. Inicio
 
@@ -150,33 +196,20 @@ Fin
 
 
 
-#Enunciado
-Leer compra
-Si compra >250000
-    descuento = compra * 0,15
-si no
-    descuento > compra *0,08
-Fin si
-Total = compra - descuento
-Escribir *total pagar", total
-Escribir"El descuento fue de:"descuento
-Fin}
+#Enunciado en clase
+Inicio
 
+    Leer compra
 
-#Viaje de alumnos
-
-Leer alumnos
-Si alummps es < 30:
-    Totyal = 4000
-    precio = Total/ Alumnos 
-Si no
-  Si alumnos < 50
-    precio = 95
-Si no
-
-
-
-
+    Si compra >250000
+        descuento = compra * 0,15
+    si no
+        descuento > compra *0,08
+    Fin si
+         Total = compra - descuento
+        Escribir *total pagar", total
+        Escribir"El descuento fue de:"descuento
+Fin
 
 
 suma = 0
@@ -186,21 +219,22 @@ for cont in range(1,11,4):
     print(f" la suma es: {suma}")
 
 ## EJERCICIOS DE CLASE
+
 Un profesor tiene un salario inicial de $1500, y recibe un incremento de 10% anual durante 6 años.¿ Cual es el salario al cabo de 6 años?Realice el algoritmo y represente la solucion mediante el flujo, pseudocodigo y el diagrama N/S, utilizando al ciclo apropiado
 
 #Analisis
 
-VA:
+- VA:
 
 - No hay 
 
-SU: 
+- SU: 
 
 - Salario final. suma de salario recibidos
     
 - salario
 
-Constantes: 
+- Constantes: 
 
 
             inicio
@@ -210,7 +244,7 @@ años: 6
 otras variables
 desde c = 0 hasta c = 6
     sakario inicial   
-     print"el salarioi del año", c, "es de " salario 
+     print"el salario del año", c, "es de " salario 
 
 salario_inicial = 1500
 incremento = 0.1
@@ -241,7 +275,7 @@ VA:
 
 - T = numero de hamburguesa triples.
 
-#### 2. variabke de salida.
+#### 2. variable de salida.
 
 SU:
 
@@ -254,37 +288,6 @@ valor_total
 2. valor_D = $25
 
 3. valor_T = $28
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 ## TAREA DE algoritmo
