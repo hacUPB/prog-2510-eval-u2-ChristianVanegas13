@@ -1,29 +1,68 @@
-# REPRESENTACIÓN DE DATOS
+# Ejercicio 1
+
+![alt text](image.png)
+
+
+- Unas variables binarias pueden representar dos posibles estados cada una. Cuando tienes varias variables binarias, el número de posibles estados aumenta exponencialmente.
+
+Para 
+𝑁 variables binarias, el número total de posibles estados se da por: 2𝑁
+
+
+## Ejemplo:
+
+- 1 variable binaria: 2^1 = 2 estados
+
+- 2 variables binarias: 2^2 = 4 estados
+
+- 3 variables binarias: 2^3 = 8 estados
+
+- Así que para cualquier número 𝑁 de variables binarias, solo necesitas elevar 2 a la potencia de 𝑁.
+
+
+# Bitacora
+
+### 1. Escribe un párrafo explicando, en tus propias palabras, cómo se representan los datos en una computadora. Por ejemplo, ¿cómo se ingresan números, letras, imágenes a una computadora?
+
+- Las computadoras usan el sistema binario (0 y 1) para representar datos. Cuando ingresamos información como números, letras o imágenes, la computadora convierte todo en una secuencia de estos bits. Los números se transforman en binario, las letras en códigos como ASCII o Unicode y las imágenes en píxeles con valores binarios. Así, la computadora puede entender, procesar y almacenar la información eficientemente.
+
+
+### 2. Luego de realizar el ejercicio 1, escribe tus conclusiones acerca de la pregunta planteada en la Figura 2. ¿Cuántos estados diferentes pueden ser representados por N variables binarias?
+
+- Si tienes 𝑁 variables binarias, puedes representar 2 𝑁 diferentes estados. Esto significa que cada variable binaria puede ser 0 o 1, y al combinar 𝑁
+  variables, el total de combinaciones posibles es 2 𝑁. Entonces, para cualquier número de variables binarias, puedes encontrar el número de estados diferentes usando esta fórmula.
+
+### 3. ¿Cuáles son las unidades de almacenamiento de datos que se utilizan en computación? Crea una tabla donde muestres estas unidades con sus prefijos. En este caso me refiero a KiloByte, MegaByte, etc
+
+
+| Unidad        | Abreviatura | Tamaño en Bytes                                            |
+|---------------|-------------|----------------------------------------------------------- |
+| Byte          | B           | 1 Byte                                                     |
+| KiloByte      | KB          | 1,024 Bytes                                                |
+| MegaByte      | MB          | 1,024 KiloBytes (1,048,576 Bytes)                          |
+| GigaByte      | GB          | 1,024 MegaBytes (1,073,741,824 Bytes)                      |
+| TeraByte      | TB          | 1,024 GigaBytes (1,099,511,627,776 Bytes)                  |
+| PetaByte      | PB          | 1,024 TeraBytes (1,125,899,906,842,624 Bytes)              |
+| ExaByte       | EB          | 1,024 PetaBytes (1,152,921,504,606,846,976 Bytes)          |
+| ZettaByte     | ZB          | 1,024 ExaBytes (1,180,591,620,717,411,303,424 Bytes)       |
+| YottaByte     | YB          | 1,024 ZettaBytes (1,208,925,819,614,629,174,706,176 Bytes) |
+
+- Fuente: https://edu.gcfglobal.org/es/cultura-tecnologica/medidas-de-almacenamiento-de-informacion/1/
+
+
+### 4. Incluye un pequeño resumen, de un par de renglones, donde menciones la importancia del trabajo de George Bool en este tópico.
+
+- George Boole fue un matemático y lógico que creó el álgebra booleana, una forma de lógica basada en valores binarios (0 y 1). Su trabajo es fundamental para las computadoras modernas, ya que permite representar y procesar datos utilizando el sistema binario. Gracias a Boole, podemos almacenar y manejar información de manera eficiente en dispositivos electrónicos.
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-# Ejercicios 2.
+# Ejercicio 2.
 
 ## como pasar de numero binario a decimales paso a paso.
 
 #### paso 1.
 
-crear una tabla donde vas a elevar el # 2 de atras así alante 
+- Crear una tabla donde vas a elevar el # 2 de atras así alante.
 
 ### Ejemplo
 
@@ -34,7 +73,7 @@ crear una tabla donde vas a elevar el # 2 de atras así alante
 ------------------------------------
 | 128 | 64 | 32| 16| 8 | 4 | 2 | 1 |
 ------------------------------------
-Ahora al poner el numero binario en la tabla, vas ponerlo como te lo dieron pero empezando de atras hacia alante en la tabla
+- Ahora al poner el numero binario en la tabla, vas ponerlo como te lo dieron pero empezando de atras hacia alante en la tabla.
 
 ### Ejemplo
 
@@ -45,12 +84,12 @@ Ahora al poner el numero binario en la tabla, vas ponerlo como te lo dieron pero
 |    1|   0|  1|  0|  0| 1 | 0 | 1 |
 
 
-Ahora los numeros que esten encima del digito 1 en la tabla 3, se sumaran y los que tengan el digito 0 encima se ignoraran.
+- Ahora los numeros que esten encima del digito 1 en la tabla 3, se sumaran y los que tengan el digito 0 encima se ignoraran.
 
 ### Ejemplo
 
-1 tiene digito 1 por debajo?
-si, entonces se toamara ese numero para sumar.
+El 1 tiene digito 1 por debajo?
+si, entonces se tomara ese numero para sumar.
 
 El 2 tiene el digito 1 por debajo?
 No, pues en ese caso no se suma el 2.
@@ -479,3 +518,51 @@ https://j2logo.com/python/tutorial/tipos-de-datos-basicos-de-python/?form=MG0AV3
 ##  | `bool`                | `bool`                  | Booleanos (`True` o `False`)             | Python    |
 
 
+
+# 5. Imagina que necesitas almacenar la siguiente información en un programa:
+
+- Un identificador numérico (número entero)
+- Una temperatura (valor de punto flotante)
+- Un valor lógico (dato booleano)
+- Un texto con 10 caracteres.
+
+#### Se almacena la información cada 10 segundos durante 24 horas. Calcula cuánto espacio total se requiere en memoria para almacenar estos datos. Describe el procedimiento y muestra el resultado final.
+
+### 1. Identificador numérico (entero): Asumimos que se usa un entero de 4 bytes (32 bits).
+
+### 2. Temperatura (valor de punto flotante): Asumimos que se usa un float de 4 bytes (32 bits).
+
+### 3. Valor lógico (booleano): Asumimos que se usa un booleano de 1 byte (8 bits).
+
+### 4. Texto con 10 caracteres: Asumimos que cada carácter usa 1 byte (8 bits), por lo tanto, 10 caracteres = 10 bytes.
+
+## Sumemos el tamaño de cada dato:
+
+- Identificador numérico: 4 bytes
+
+- Temperatura: 4 bytes
+
+- Valor lógico: 1 byte
+
+- Texto (10 caracteres): 10 bytes
+
+- Total por cada registro: 4 +4 + 1+ 10 = 19 bytes.
+
+- Ahora, calculamos la cantidad de registros que se almacenan en 24 horas: Hay 86,400 segundos en un día (24 horas * 60 minutos * 60 segundos).
+
+- Se almacena la información cada 10 segundos.
+
+- Total de registros en 24 horas: 86,400 ÷ 10 = 8,640 registros.
+
+- Finalmente, calculamos el espacio total requerido:
+
+- Espacio total requerido = Número de registros * Tamaño de cada registro Espacio total requerido =  8,640  registros ∗19   bytes = 164,160   bytes.
+
+- Convertimos a Kilobytes (KB) para una mejor visualización: 164,160  bytes ÷ 1,024 = 160.31 KB
+
+- Por lo tanto, se requieren aproximadamente 160.31 KB de memoria para almacenar estos datos durante 24 horas.
+
+
+# 6. Finalmente, explica con tus propias palabras el resultado de esta actividad y qué aprendiste acerca de la representación de datos en las computadoras.
+
+- En resumen, aprendí cómo se representa y almacena la información en las computadoras usando el sistema binario y cómo calcular el espacio de memoria necesario para almacenar datos. Además, aprendí a convertir números binarios a decimales y viceversa, y cómo implementar estas conversiones en diferentes lenguajes de programación. Todo esto es fundamental para comprender el funcionamiento de las computadoras y la programación.
