@@ -1,11 +1,132 @@
 # Algoritmos
 ##simbolos
 
+# Ejercicio 1.
+
+
+He investigado los símbolos utilizados para representar operaciones en un diagrama de flujo. Aquí tienes una lista de los símbolos más comunes y sus significados:
+
+### Óvalo: Representa el inicio y el fin del diagrama de flujo.
+
+### Rectángulo: Indica una operación o proceso.
+
+### Rombo Horizontal: Utilizado para decisiones o bifurcaciones en el flujo.
+
+### Paralelogramo: Representa la entrada o salida de datos.
+
+### Flechas: Muestran la dirección del flujo del proceso.
+
+https://edu.gcfglobal.org/es/conceptos-basicos-de-programacion/simbolos-de-un-diagrama-de-flujo/1/?form=MG0AV3
+
+
 ![alt text](image.png)
 
 
+# Ejercicios 2.
+
 ![alt text](<diagrma de programacion.drawio.png>)
 
+
+1. 
+
+## Analisis
+
+### Variables de entrada
+Cantidad_Lapices
+
+### Variables de salida
+Costo_total
+
+### Constantes
+No hay
+
+### Otras Variables 
+Precio_Unitario
+
+### Ecuaciones
+
+pseudocodigo
+ 
+ Inicio
+
+    LEER cantidad_Lapices
+
+Precio_Unitario
+
+    Si cantidad_Lapices > 1000 
+    Entonces Precio_Unitario = 85
+     Si no
+        precio_Unitario = 90
+    FIN SI
+
+    // Calcular el costo total
+    costoTotal = cantidad_Lapices * precio_Unitario
+
+    // Mostrar el resultado
+    ESCRIBIR "El costo total es: $", Costo_Total
+
+FIN
+
+
+## Diagrama de flujo
+
+![alt text](image-2.png)
+
+
+
+
+## Analisis
+
+### Variables de entrada
+Monto_Compra
+
+### Variables de salida
+Precio_Final
+
+### Constantes
+No hay
+
+### Otras Variables 
+Descuento
+
+### Ecuaciones
+
+
+INICIO
+
+    LEER Monto_Compra
+
+Descuento
+
+    S Monto_Compra > 250000
+     Entonces Descuento = 15%
+    Si no
+        Descuento = 8%
+    Fin Si
+
+    Descuento = Monto_Compra/100 * Descuento
+
+    PrecioFinal = Monto_Compra - Descuento
+    Imprimir Precio_Final
+    
+    ESCRIBIR "El descuento es: $" + descuento
+    ESCRIBIR "El precio final es: $" + precioFinal
+
+FIN
+
+
+
+
+
+
+
+
+
+
+
+
+Diagrama 2
+![alt text](image-3.png)
 
 1. Inicio
 
@@ -339,3 +460,26 @@ Fin
 SI N 
 
     
+
+
+
+
+
+
+
+
+# Retos Algoritmos
+
+### 1. Se requiere obtener la distancia entre dos puntos en el plano cartesiano, tal y como se muestra en la figura 1. Realice un diagrama de flujo y pseudocodigo que representan el algoritmopara obtener la distancias entre esos punts.
+
+![alt text](image-1.png)
+
+Diagrama de flujo
+
+
+
+
+
+### 2. Una modista, para realizar sus prendas de vestir, encarga las telas al extranjero. Para cada pedido, tiene que proporcionar las medidas de la telaen pulgadas, pero ella generalmente las tiene en metros. Realice un algoritmopara ayudar a resolver el problema, determinando cuántas pulgadas para ayudar a resolver el problema, determinado cuantas pulgadas debe pedir con la base en los metros que requiere. Representelo mediante un diagrama de flujo y pseudocodigo (1 pulgada = 0.0254 m).
+
+
