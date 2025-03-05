@@ -5,7 +5,7 @@
 
 - Unas variables binarias pueden representar dos posibles estados cada una. Cuando tienes varias variables binarias, el número de posibles estados aumenta exponencialmente.
 
-Para 
+Para: 
 𝑁 variables binarias, el número total de posibles estados se da por: 2𝑁
 
 

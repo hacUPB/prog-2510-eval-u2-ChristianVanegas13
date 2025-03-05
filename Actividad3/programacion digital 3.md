@@ -29,46 +29,45 @@ https://edu.gcfglobal.org/es/conceptos-basicos-de-programacion/simbolos-de-un-di
 
 ### 1. Realice un algoritmo para determinar cuánto se debe pagar por equis cantidad de lápices considerando que si son 1000 o más el costo es de $85 cada uno; de lo contrario, el precio es de $90. Represéntelo con el pseudocódigo y el diagrama de flujo.
 
+
 ## Analisis
 
 ### Variables de entrada
 Cantidad_Lapices
-
 ### Variables de salida
-Costo_total
+Costo_Total
 
 ### Constantes
-No hay
+No Hay
 
 ### Otras Variables 
 Precio_Unitario
 
 ### Ecuaciones
+Costo_Total = Cantidad_Lapices * Precio_Unitario
 
-pseudocodigo
+### pseudocodigo
  
  Inicio
 
-    LEER cantidad_Lapices
+    Leer Cantidad_Lapices
 
 Precio_Unitario
 
-    Si cantidad_Lapices > 1000 
+    Si Cantidad_Lapices > 1000 
     Entonces Precio_Unitario = 85
      Si no
         precio_Unitario = 90
-    FIN SI
+    Fin si
 
-    // Calcular el costo total
-    costoTotal = cantidad_Lapices * precio_Unitario
+    Costo_Total = Cantidad_Lapices * Precio_Unitario
 
-    // Mostrar el resultado
-    ESCRIBIR "El costo total es: $", Costo_Total
+    Escribir "El costo total es: $", Costo_Total
 
 FIN
 
 
-## Diagrama de flujo
+### Diagrama de flujo
 
 ![alt text](image-2.png)
 
@@ -94,6 +93,8 @@ Descuento = Monto_Compra/100 * Descuento
 
 PrecioFinal = Monto_Compra - Descuento
 
+### pseudocodigo
+
 INICIO
 
     LEER Monto_Compra
@@ -116,7 +117,7 @@ Descuento
 
 FIN
 
-Diagrama 2
+### Diagrama 2
 ![alt text](image-3.png)
 
 ### 3. El director de una escuela está organizando un viaje de estudios, y requiere determinar cuánto debe cobrar a cada alumno y cuánto debe pagar a la compañía de viajes por el servicio. La forma de cobrar es la siguiente: si son 100 alumnos o más, el costo por cada alumno es de $65.00; de 50 a 99 alumnos, el costo es de $70.00, de 30 a 49, de $95.00, y si son menos de 30, el costo de la renta del autobús es de $4000.00, sin importar el número de alumnos.
@@ -135,7 +136,11 @@ N
 Costo_Total
 
 ### Ecuaciones
+Monto_Total = 4000
+Costo_Alumno = Monto_Total /Numero_AlumnosAlumnos
+Monto_Total = Numero_Alumnos * Costo_Alumno
 
+### pseudocodigo
 
 INICIO
 
@@ -156,7 +161,7 @@ Monto_Total
     Fin Si
 
     Si Numero_Alumnos >= 30
-     Entonces Monto_Total = numeroAlumnos * costoPorAlumno
+     Entonces Monto_Total = Numero_Alumnos * costo_Alumno
     Fin Si
 
     Escribir "El costo por alumno es: $" + costoPorAlumno
@@ -168,11 +173,12 @@ Monto_Total
 
 FIN
 
+### Diagrama de flujo
 ![alt text](image-4.png)
 
 
 
-
+#### Ejercicios de clase(No terminado)
 
 1. Inicio
 
@@ -180,13 +186,13 @@ FIN
 
 3. hacer r positivo
 
-si no con R negativo
+4. si no con R negativo
 
 otra vez 
 
 1.Inicio
 
-2. Hacer SU = 0
+Hacer SU = 0
 Desde C = 1 hasta C = 10
 Leer VA
 Hacer SU = SU + VA
@@ -267,27 +273,105 @@ El salario el año 5 es de 2415.7650000000003
 
 #### 1. variable de entrada.
 
-VA:
+#### Variable de entrada:
+Tipo_Hamburguesa,Cantidad_Hamburgues,Forma_Pago
 
-- S = numero de hamburguesas sencillas.
-
-- D = numero de hamburguesa dobles.
-
-- T = numero de hamburguesa triples.
 
 #### 2. variable de salida.
+Valor_Total
 
-SU:
 
-valor_total
+#### 3.Otras variables
+Forma_Pago
+Pago_Efectivo
+Pago_Tarjeta
 
-#### 3. constantes
+#### 4. constantes
 
 1. valor_S = $20
 
 2. valor_D = $25
 
 3. valor_T = $28
+
+
+INICIO
+
+    Leer Tipo_Hamburguesa,Cantidad_Hamburgues,Forma_Pago
+
+    S = numero de hamburguesas sencillas.
+
+    D = numero de hamburguesa dobles.
+
+    T = numero de hamburguesa triples
+    
+
+    Mientras n > 0 Hacer
+        
+        Escribir "Elige un tipo de hamburguesa: "
+        Escribir " valor_S = 20$"
+        Escribir " valor_D = 25$"
+        Escribir " valor_T = 28$"
+        Leer Tipo_Hamburguesa
+
+        Si Tipo_Hamburguesa = valor_S 
+        Etonces
+            Valor_Total  = Valor_Total + 20
+        Si No Tipo_Hamburguesa = valor_D 
+        Entonces
+               valor_Total = Valor_Total + 25
+        Si No Tipo_Hamburguesa = valor_T 
+        Entonces
+            Valor_Total = Valor_Total + 28
+        De lo contrario
+            Escribir "Ingresa un tipo de hamburguesa correcto."
+        Fin si
+
+        n = n - 1
+
+    Fin mientras
+    Escribir "Elige la forma de pago: "
+    Escribir "Pago_Efectivo"
+    ESCRIBIR "Pago_Tarjeta"
+    Leer Forma_Pago
+
+    Si Forma_Pago =  Pago_Tarjeta
+    Entonces
+        Pago_Tarjeta = Valor_Total * 0.05
+        Valor_Total = Valor_Total + Pago_Tarjeta
+        ESCRIBIR "Se aplicó un cargo del 5%."
+    Fin Si
+    Escribir "El total a pagar es: $" + Valor_total
+
+FIN
+
+### Diagrama de flujo
+
+![alt text](image-5.png)
+
+
+### Diagrma N/S
+
+Inicio
+
+Leer Tipo_Hamburguesa,Cantidad_Hamburgues,Forma_Pago
+
+Ciclo para cada hamburguesa:
+
+Seleccionar Tipo_Hamburguesa.
+
+Calcular Valor_Total según el tipo.
+
+Decrementar número de hamburguesas.
+
+Seleccionar Forma_Pago.
+
+Pago_Tarjeta aplicar cargo por tarjeta.
+
+Mostrar Valor_Total.
+
+Fin
+
 
 
 ## TAREA DE algoritmo
@@ -402,107 +486,4 @@ Los diagramas de flujo siempre deben tener un inicio y un fin claramente definid
 
 - Bucle: Revisar todos los gastos.
 
-- Estas estructuras nos permiten organizar y ejecutar acciones de manera lógica y eficiente
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-## solicitar al usuario 2 numero enteros. Imprimir en pantalla los numero pares comprendidos entre ellos
-
-### pseudocodigo
-
-Inicio
-
-Leer numero_1, numero_2    
-
-    si numero_1 > numero_2 
-    mayor = numero_1
-    menor = numero_2
-    si no 
-        mayor = numero_2
-        menor = numero_1
-Fin si
-mientras menor < mayor
-         si residuo(menor, 2) = 0 //si menor es para
-         Escribir menor
-         Fin si
-         menor = menor +1
-    Fin mientras
-    Fin
-
-     numero_1 = int(input( "Ingrese el primer numero: "))
-    numero_2 = int(input(" Ingrese el segundo numero:"))
-
-if numero_1 > numero_2:
-    mayor = numero_1
-    menor = numero_2
-    
-else:
-    mayor = numero_2
-    menor = numero_1
-while menor <= mayor:
-    if (menor % 2) == 0:
-       print(menor)
-
-Serie de fiboraci
-¿ Cuantos numeros de la serie desea imprimir?
-
-Inicio
-Leer N
-Escribir N0, N1
-N0 = 0
-N1 = 1
-
-Mientras n >0
- Resultado = No + N1
- Escribir resultado
- n0 = N1
- n1 = resultado
- N = N - 1
-
-Fin mientras
-Fin
-SI N 
-
-    
-
-
-
-
-
-
-
-
-# Retos Algoritmos
-
-### 1. Se requiere obtener la distancia entre dos puntos en el plano cartesiano, tal y como se muestra en la figura 1. Realice un diagrama de flujo y pseudocodigo que representan el algoritmopara obtener la distancias entre esos punts.
-
-![alt text](image-1.png)
-
-Diagrama de flujo
-
-
-
-
-
-### 2. Una modista, para realizar sus prendas de vestir, encarga las telas al extranjero. Para cada pedido, tiene que proporcionar las medidas de la telaen pulgadas, pero ella generalmente las tiene en metros. Realice un algoritmopara ayudar a resolver el problema, determinando cuántas pulgadas para ayudar a resolver el problema, determinado cuantas pulgadas debe pedir con la base en los metros que requiere. Representelo mediante un diagrama de flujo y pseudocodigo (1 pulgada = 0.0254 m).
-
-
+- Estas estructuras nos permiten organizar y ejecutar acciones de manera lógica y eficiente.
