@@ -3,7 +3,6 @@
 
 # Ejercicio 1.
 
-
 He investigado los símbolos utilizados para representar operaciones en un diagrama de flujo. Aquí tienes una lista de los símbolos más comunes y sus significados:
 
 ### Óvalo: Representa el inicio y el fin del diagrama de flujo.
@@ -49,27 +48,27 @@ Costo_Total = Cantidad_Lapices * Precio_Unitario
 ### pseudocodigo
  
  Inicio
-
+```
     Leer Cantidad_Lapices
 
-Precio_Unitario
+    Precio_Unitario
 
     Si Cantidad_Lapices > 1000 
-    Entonces Precio_Unitario = 85
+        Entonces Precio_Unitario = 85
      Si no
         precio_Unitario = 90
     Fin si
 
     Costo_Total = Cantidad_Lapices * Precio_Unitario
 
-    Escribir "El costo total es: $", Costo_Total
+      Escribir "El costo total es: $", Costo_Total
 
-FIN
-
+Fin
+ ```
 
 ### Diagrama de flujo
 
-![alt text](image-2.png)
+![alt text](image-8.png)
 
 
 ### 2. Un almacén de ropa tiene una promoción: por compras superiores a $250 000 se les aplicará un descuento de 15%, de caso contrario, sólo se aplicará un 8% de descuento. Realice un algoritmo para determinar el precio final que debe pagar una persona por comprar en dicho almacén y de cuánto es el descuento que obtendrá. Represéntelo mediante el pseudocódigo y el diagrama de flujo.
@@ -95,30 +94,33 @@ PrecioFinal = Monto_Compra - Descuento
 
 ### pseudocodigo
 
-INICIO
+```
+Inicio
 
-    LEER Monto_Compra
+    Leer Monto_Compra
 
 Descuento
 
     Si Monto_Compra > 250000
-     Entonces Descuento = 15%
+       Entonces Descuento = 15%
     Si no
         Descuento = 8%
+    
     Fin Si
 
-    Descuento = Monto_Compra/100 * Descuento
+      Descuento = Monto_Compra/100 * Descuento
 
-    PrecioFinal = Monto_Compra - Descuento
-    Imprimir Precio_Final
+    Precio_Final = Monto_Compra - Descuento
+        Escribir Precio_Final
     
-    Escribir "El descuento es: $" + descuento
-    Escribir "El precio final es: $" + precioFinal
+    Escribir "El descuento es: $", Descuento
+    Escribir "El precio final es: $", Precio_Final
 
-FIN
+Fin
+```
 
 ### Diagrama 2
-![alt text](image-3.png)
+![alt text](image-7.png)
 
 ### 3. El director de una escuela está organizando un viaje de estudios, y requiere determinar cuánto debe cobrar a cada alumno y cuánto debe pagar a la compañía de viajes por el servicio. La forma de cobrar es la siguiente: si son 100 alumnos o más, el costo por cada alumno es de $65.00; de 50 a 99 alumnos, el costo es de $70.00, de 30 a 49, de $95.00, y si son menos de 30, el costo de la renta del autobús es de $4000.00, sin importar el número de alumnos.
 
@@ -133,7 +135,7 @@ Monto_Total
 N
 
 ### Otras Variables 
-Costo_Total
+Costo__Total
 
 ### Ecuaciones
 Monto_Total = 4000
@@ -142,9 +144,10 @@ Monto_Total = Numero_Alumnos * Costo_Alumno
 
 ### pseudocodigo
 
-INICIO
+```
+Inicio
 
-    LEER Numero_Alumnos
+    Leer Numero_Alumnos
 
 Costo_Alumno
 Monto_Total 
@@ -157,50 +160,25 @@ Monto_Total
     Entonces Costo_Alumno = 95
     De lo contrario
         Monto_Total = 4000
-        Costo_Alumno = Monto_Total / Numero_AlumnosAlumnos
+        Costo_Alumno = Monto_Total / Numero_Alumnos
     Fin Si
 
     Si Numero_Alumnos >= 30
-     Entonces Monto_Total = Numero_Alumnos * costo_Alumno
+     Entonces Monto_Total = Numero_Alumnos * Costo_Alumno
     Fin Si
 
     Escribir "El costo por alumno es: $" + costoPorAlumno
     SI Numero_Alumnos >= 30 
     Entonces
-        Escribir "El monto total a pagar es: $" + montoTotal
+        Escribir "El monto total a pagar es: $", Monto_Total
     De lo contrario
-        Escribir "El monto total a pagar es: $" + montoTotal
+        Escribir "El monto total a pagar es: $", Monto__Total
 
-FIN
+Fin
+```
 
 ### Diagrama de flujo
-![alt text](image-4.png)
-
-
-
-#### Ejercicios de clase(No terminado)
-
-1. Inicio
-
-2. leer numero
-
-3. hacer r positivo
-
-4. si no con R negativo
-
-otra vez 
-
-1.Inicio
-
-Hacer SU = 0
-Desde C = 1 hasta C = 10
-Leer VA
-Hacer SU = SU + VA
-Fin desde
-Escribir SU
-Fin
-
-
+![alt text](image-9.png)
 
 ## Enunciado en clase
 Inicio
@@ -226,11 +204,11 @@ for cont in range(1,11,4):
 
 ## EJERCICIOS DE CLASE
 
-Un profesor tiene un salario inicial de $1500, y recibe un incremento de 10% anual durante 6 años.¿ Cual es el salario al cabo de 6 años?Realice el algoritmo y represente la solucion mediante el flujo, pseudocodigo y el diagrama N/S, utilizando al ciclo apropiado
+### Un profesor tiene un salario inicial de $1500, y recibe un incremento de 10% anual durante 6 años.¿ Cual es el salario al cabo de 6 años?Realice el algoritmo y represente la solucion mediante el flujo, pseudocodigo y el diagrama N/S, utilizando al ciclo apropiado
 
-#Analisis
+# Analisis
 
-- VA:
+- VA: Salario_Inicial
 
 - No hay 
 
@@ -243,13 +221,13 @@ Un profesor tiene un salario inicial de $1500, y recibe un incremento de 10% anu
 - Constantes: 
 
 
-            inicio
+  Inicio
 Salario inicial. 1500
 incremento=0,1
 años: 6
 otras variables
 desde c = 0 hasta c = 6
-    sakario inicial   
+    salario_Inicial   
      print"el salario del año", c, "es de " salario 
 
 salario_inicial = 1500
@@ -294,8 +272,8 @@ Pago_Tarjeta
 
 3. valor_T = $28
 
-
-INICIO
+```
+Inicio
 
     Leer Tipo_Hamburguesa,Cantidad_Hamburgues,Forma_Pago
 
@@ -330,49 +308,24 @@ INICIO
         n = n - 1
 
     Fin mientras
-    Escribir "Elige la forma de pago: "
-    Escribir "Pago_Efectivo"
-    ESCRIBIR "Pago_Tarjeta"
-    Leer Forma_Pago
+       Escribir "Elige la forma de pago: "
+       Escribir "Pago_Efectivo"
+       Escribir "Pago_Tarjeta",  Forma_Pago
 
     Si Forma_Pago =  Pago_Tarjeta
-    Entonces
-        Pago_Tarjeta = Valor_Total * 0.05
-        Valor_Total = Valor_Total + Pago_Tarjeta
-        ESCRIBIR "Se aplicó un cargo del 5%."
+       Entonces
+          Pago_Tarjeta = Valor_Total * 0.05
+          Valor_Total = Valor_Total + Pago_Tarjeta
+            Escribir "Se aplicó un cargo del 5%."
     Fin Si
-    Escribir "El total a pagar es: $" + Valor_total
+        Escribir "El total a pagar es: $" + Valor_total
 
 FIN
+```
 
 ### Diagrama de flujo
 
-![alt text](image-5.png)
-
-
-### Diagrma N/S
-
-Inicio
-
-Leer Tipo_Hamburguesa,Cantidad_Hamburgues,Forma_Pago
-
-Ciclo para cada hamburguesa:
-
-Seleccionar Tipo_Hamburguesa.
-
-Calcular Valor_Total según el tipo.
-
-Decrementar número de hamburguesas.
-
-Seleccionar Forma_Pago.
-
-Pago_Tarjeta aplicar cargo por tarjeta.
-
-Mostrar Valor_Total.
-
-Fin
-
-
+![alt text](image-6.png)
 
 ## TAREA DE algoritmo
 
