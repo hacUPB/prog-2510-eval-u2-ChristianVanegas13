@@ -3,7 +3,7 @@
 ### Se requiere obtener la distancia entre dos puntos en el plano cartesiano, tal y como se muestra en la figura 1. Realice un diagrama de flujo y pseudocódigo que representen el algoritmo para obtener la distancia entre esos puntos.
 
 
- ## Analisis
+ ## Análisis
 
 ### Variables de entrada
 x1, x2, y1, y2
@@ -38,7 +38,7 @@ Fin
 
 ### 2. Una modista, para realizar sus prendas de vestir, encarga las telas al extranjero Para cada pedido, tiene que proporcionar las medidas de la tela en pulgadas, pero ella generalmente las tiene en metros. Realice un algoritmo para ayudar a resolver el problema, determinando cuántas pulgadas debe pedir con base en los metros que requiere. Represéntelo mediante un diagrama de flujo y pseudocódigo (1 pulgada = 0.0254 m).
 
-## Analisis
+## Análisis
 
 ### Variables de entrada
 tela_metros
@@ -53,7 +53,7 @@ Tela_pulgadas = Tela_metros * Medidas_Conv
 ## Diagrama de flujo
 
 
-## Pseudocodigo
+## Pseudocódigo
 
 Inicio
 ```
@@ -75,7 +75,7 @@ Fin
 
 ## 3.  Se requiere determinar la hipotenusa de un triángulo rectángulo. ¿Cómo sería el diagrama de flujo y el pseudocódigo que representen el algoritmo para obtenerla? Recuerde que por Pitágoras se tiene que: $C^2 = A^2 + B^2$.
 
-## Analisis
+## Análisis
 
 ### Varibale de entrada 
 A,B,C
@@ -125,7 +125,7 @@ Fin
 ## 4. Se requiere determinar la edad actual de una persona basándose en su fecha de nacimiento. Además, es necesario establecer si la persona ya ha cumplido años en el año en curso, si aún no lo ha hecho, o si hoy es su cumpleaños, para celebrarlo. La fecha de nacimiento y la fecha actual estarán representadas mediante tres variables: día, mes y año. 
 
 
-## Analisis
+## Análisis
 
 ### Varibale de entrada 
 dia_nacimiento, mes_nacimiento, año_nacimeinto, edad, anio_actual, mes_actual, dia_actual 
@@ -195,7 +195,7 @@ Fin
 
 ## 5. Realice un algoritmo que permita determinar el sueldo semanal de un trabajador con base en las horas trabajadas y el pago por hora, considerando que a partir de la hora número 41 y hasta la 45, cada hora se le paga el doble, de la hora 46 a la 50, el triple, y que trabajar más de 50 horas no está permitido. Represente el algoritmo mediante pseudocódigo.
 
-## Analisis
+## Análisis
 
 ### Varibale de entrada 
 pago_hora, Horas_trabajada, Extra_Doble, Extra_Triple
@@ -257,7 +257,7 @@ FIN
 
 ## 6. Se requiere un algoritmo para determinar, de N cantidades, cuántas son cero, cuántas son menores a cero, y cuántas son mayores a cero. Realice el pseudocódigo para representarlo, utilizando el ciclo apropiado.
 
-## Analisis
+## Análisis
 
 ### Varibale de entrada 
 cantidad_0, cantidad_menor, cantidad_mayor
@@ -271,35 +271,37 @@ No Hay
 
 ### pseudocodigo
 
-```
 Inicio
 
-    // Declaración de variables
-    ahorroDiario = 0.03 // Inicialmente ahorra 3¢ el primer día
-    ahorroAnual = 0 // Total ahorrado en un año
-    diasEnUnAño = 365
-
-    // Ciclo para calcular el ahorro diario y anual
-    PARA i = 1 HASTA diasEnUnAño HACER
-        // Calcular el ahorro diario
-        ahorroDiario = 0.03 * (3^(i-1))
-        
-        // Sumar al ahorro anual
-        ahorroAnual = ahorroAnual + ahorroDiario
-        
-        // Mostrar el ahorro diario
-        ESCRIBIR "El ahorro del día " + i + " es: $" + ahorroDiario
-    FIN PARA
-
-    // Mostrar el ahorro anual
-    ESCRIBIR "El ahorro total en un año es: $" + ahorroAnual
-
-FIN
 ```
+Leer 
+cantidad_0 = 0
+cantidad_menor = 0
+cantidad_mayor = 0
+cantidad_N
+
+para i desde 1 hasta cantidad_N hacer
+
+    si cantidad_N == 0 entonces
+        cantidad_0  = cantidad_0  + 1
+    si no si cantidad_N < 0 entonces
+       cantidad_menor = cantidad_menor + 1
+    si no
+       cantidad_mayor = cantidad_mayor + 1
+    fin si
+fin para
+
+   escribir "Cantidad de ceros:", cantidad_0
+   escribir "Cantidad de números menores a cero:", cantidad_menor
+   escribir "Cantidad de números mayores a cero:", cantidad_mayor
+
+Fin
+```
+
 
 ## 7. Se requiere un algoritmo para determinar cuánto ahorrará en pesos una persona diariamente, y en un año, si ahorra 3¢ el primero de enero, 9¢ el dos de enero, 27¢ el 3 de enero y así sucesivamente todo el año. Represente la solución mediante pseudocódigo.
 
-## Analisis
+## Análisis
 
 ### Varibale de entrada 
 Ahorro_Diario, Dias_Anual
@@ -341,7 +343,7 @@ Fin
 
 ## 8. Realice el algoritmo para determinar cuánto pagará una persona que adquiere N artículos, los cuales están de promoción. Considere que si su precio es mayor o igual a $200 se le aplica un descuento de 15%, y si su precio es mayor a $100, pero menor a $200, el descuento es de 12%; de lo contrario, solo se le aplica 10%. Se debe saber cuál es el costo y el descuento que tendrá cada uno de los artículos y finalmente cuánto se pagará por todos los artículos obtenidos. Represente la solución mediante pseudocódigo.
 
-## Analisis
+## Análisis
 
 ### Varibale de entrada 
 Precio_Articulo
@@ -399,7 +401,7 @@ Fin
 
 ## 9. Realice un algoritmo y represéntelo mediante pseudocódigo para obtener una función exponencial, la cual está dada por:  $𝑒^𝑥 = 1+\frac x {1!} + \frac {x^2}{2!}+ \frac {x^3}{3!}+ …$
 
-## Analisis
+## Análisis
 
 ### Varibale de entrada 
 x, n
@@ -453,7 +455,7 @@ Fin
 
 ## 10. Realice un algoritmo para obtener el seno de un ángulo y represéntelo mediante pseudocódigo. Utilice la siguiente ecuación: $Sen x = x - \frac{x^3}{3!} + \frac{x^5}{5!} - \frac{x^7}{7!} + ...$
 
-## Analisis
+## Análisis
 
 ### Varibale de entrada 
 
